@@ -555,6 +555,10 @@ section {
   font-family: 'ProximaNova_reg', sans-serif;
   margin-bottom: 3rem;
 }
+iframe {
+  width: 100%;
+  border: none;
+}
 /* Оформление подвала (footer) */
 footer {
   padding: 4rem 0;
