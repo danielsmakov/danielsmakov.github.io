@@ -500,9 +500,10 @@ section {
   font-size: 2.2rem;
 }
 .tour .main-title h2 {
-  font-size: 3.6rem;
+  font-size: 3.6rem !important;
   margin-bottom: 0;
   text-transform: none;
+  font-family: 'ProximaNova_bold', sans-serif;
 }
 .tour-form-btn {
   font-size: 1.5rem;
