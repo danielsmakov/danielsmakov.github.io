@@ -383,7 +383,7 @@ section {
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div id="primary-slider" class="splide">
+                            <div id="primary-slider-1" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -408,7 +408,7 @@ section {
                                 </div>
                             </div>
                             
-                            <div id="secondary-slider" class="splide">
+                            <div id="secondary-slider-1" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -469,7 +469,7 @@ section {
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div id="primary-slider" class="splide">
+                            <div id="primary-slider-2" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -494,7 +494,7 @@ section {
                                 </div>
                             </div>
                             
-                            <div id="secondary-slider" class="splide">
+                            <div id="secondary-slider-2" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -556,7 +556,7 @@ section {
                 <div class="feedback-slider_item">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div id="primary-slider" class="splide">
+                            <div id="primary-slider-3" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -581,7 +581,7 @@ section {
                                 </div>
                             </div>
                             
-                            <div id="secondary-slider" class="splide">
+                            <div id="secondary-slider-3" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
@@ -1138,14 +1138,14 @@ section {
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
     <!-- Подключаем стили slick slider -->
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <!-- Подключаем саму библиотеку slick slider -->
     <script src="slick/slick.min.js"></script>
-    <!-- Подключаем fotorama slider -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <!-- Подключаем библиотеку splide slider -->
+    <script src="js/slick.min.js"></script>
     <!-- Подключаем splide slider -->
     <script src="js/splide.min.js"></script>
     
@@ -1203,7 +1203,7 @@ section {
     <!-- Инициализируем splide slider -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var secondarySlider = new Splide('#secondary-slider', {
+            var secondarySlider = new Splide('#secondary-slider-1', {
                 fixedWidth: 90,
                 height: 60,
                 gap: 2,
@@ -1218,7 +1218,65 @@ section {
                 },
             }).mount();
 
-            var primarySlider = new Splide('#primary-slider', {
+            var primarySlider = new Splide('#primary-slider-1', {
+                type: 'fade',
+                heightRatio: 0.6,
+                pagination: false,
+                arrows: true,
+                cover: true,
+            }); // do not call mount() here.
+
+            primarySlider.sync(secondarySlider).mount();
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var secondarySlider = new Splide('#secondary-slider-2', {
+                fixedWidth: 90,
+                height: 60,
+                gap: 2,
+                cover: true,
+                isNavigation: true,
+                arrows: false,
+                breakpoints: {
+                    '600': {
+                        fixedWidth: 66,
+                        height: 40,
+                    }
+                },
+            }).mount();
+
+            var primarySlider = new Splide('#primary-slider-2', {
+                type: 'fade',
+                heightRatio: 0.6,
+                pagination: false,
+                arrows: true,
+                cover: true,
+            }); // do not call mount() here.
+
+            primarySlider.sync(secondarySlider).mount();
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var secondarySlider = new Splide('#secondary-slider-3', {
+                fixedWidth: 90,
+                height: 60,
+                gap: 2,
+                cover: true,
+                isNavigation: true,
+                arrows: false,
+                breakpoints: {
+                    '600': {
+                        fixedWidth: 66,
+                        height: 40,
+                    }
+                },
+            }).mount();
+
+            var primarySlider = new Splide('#primary-slider-3', {
                 type: 'fade',
                 heightRatio: 0.6,
                 pagination: false,
