@@ -456,6 +456,7 @@ footer {
   text-align: center;
 }
 .popup-header {
+  font-size: 2rem;
   font-family: 'ProximaNova_bold', sans-serif;
 }
 @media (max-width: 1199px) {
