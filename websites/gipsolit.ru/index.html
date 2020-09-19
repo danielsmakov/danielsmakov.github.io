@@ -238,9 +238,9 @@ section {
                             <h2 class="main-form-header">Для расчёта точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
                             <form class="form" action="#">
                                 <label for="input-name-1">Ваше имя</label>
-                                <input class="form-input" id="input-name-1" type="text">
+                                <input class="form-input" id="input-name-1" type="text" required>
                                 <label for="input-phone-1">Номер телефона</label>
-                                <input class="form-input" id="input-phone-1" type="text">
+                                <input class="form-input" id="input-phone-1" type="text" required>
                                 <button class="form-btn button" type="submit">оставьте заявку</button>
                                 <small>Подарок в день обращения*</small>
                             </form>
@@ -652,11 +652,11 @@ section {
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="input-name-2">Ваше имя</label>
-                                    <input class="form-input" id="input-name-2" type="text">
+                                    <input class="form-input" id="input-name-2" type="text" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="input-phone-2">Номер телефона</label>
-                                    <input class="form-input" id="input-phone-2" type="text">
+                                    <input class="form-input" id="input-phone-2" type="text" required>
                                 </div>
                             </div><!-- row -->
                             
@@ -1008,9 +1008,9 @@ section {
                             </h2>
                             <form class="form" action="#">
                                 <label for="input-name-3">Ваше имя</label>
-                                <input class="form-input" id="input-name-3" type="text">
+                                <input class="form-input" id="input-name-3" type="text" required>
                                 <label for="input-phone-3">Номер телефона</label>
-                                <input class="form-input" id="input-phone-3" type="text">
+                                <input class="form-input" id="input-phone-3" type="text" required>
                                 <button class="form-btn tour-form-btn button" type="submit">ЗАПИСАТЬСЯ НА ПРОСМОТР</button>
                                 <small>Подберем ближайший к вам объект</small>
                             </form>
@@ -1077,13 +1077,13 @@ section {
                         <h3 class="contacts-form-header">Оставьте контактные данные для связи</h3>
                         <form class="form" action="#">
                             <label for="input-name-4">Ваше имя</label>
-                            <input class="form-input" id="input-name-4" type="text">
+                            <input class="form-input" id="input-name-4" type="text" required>
                             <label for="input-phone-4">Номер телефона</label>
-                            <input class="form-input" id="input-phone-4" type="text">
+                            <input class="form-input" id="input-phone-4" type="text" required>
                             <label for="input-email-1">Email</label>
-                            <input class="form-input" id="input-email-1" type="text">
+                            <input class="form-input" id="input-email-1" type="text" required>
                             <label for="input-message-1">Сообщение</label>
-                            <textarea class="form-textarea" id="input-message-1" rows="5"></textarea>
+                            <textarea class="form-textarea" id="input-message-1" rows="5" required></textarea>
                             <button class="form-btn button" type="submit">оставьте заявку</button>
                         </form>
                     </div>
@@ -1161,6 +1161,16 @@ section {
     <!-- Инициализируем wow -->
     <script>
         new WOW().init();
+    </script>
+    <!-- Подключаем Masked Input -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+        jQuery(function ($) {
+                $("#input-phone-1").mask("+7 (999)-999-99-99");
+                $("#input-phone-2").mask("+7 (999)-999-99-99");
+                $("#input-phone-3").mask("+7 (999)-999-99-99");
+                $("#input-phone-4").mask("+7 (999)-999-99-99");
+            });
     </script>
     
 
