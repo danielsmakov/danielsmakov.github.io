@@ -472,6 +472,9 @@ section {
   background-size: cover;
   text-align: center;
 }
+.materials-details {
+  text-align: center;
+}
 .materials .section-header {
   margin-bottom: 5rem;
 }
@@ -480,13 +483,17 @@ section {
   margin-top: 5rem;
 }
 .materials-link {
+  display: block;
   color: #46b814;
-  border-bottom: 1px dotted #46b814;
   font-size: 1.6rem;
   font-family: 'ProximaNova_bold', sans-serif;
 }
 .materials-link:hover {
   color: #348a0f;
+}
+.materials-link-offer {
+  display: inline;
+  border-bottom: 1px dotted #46b814;
 }
 .materials img {
   display: block;
@@ -648,8 +655,8 @@ footer {
   .feedback-form {
     padding: 1rem 1rem;
   }
-  .feedback-slider .fotorama {
-    margin-bottom: 2rem;
+  .feedback-slider {
+    max-height: 85rem;
   }
   .hand {
     display: none;
@@ -696,6 +703,9 @@ footer {
   .feedback-next-btn {
     right: 0;
   }
+  .feedback-slider {
+    max-height: 80rem;
+  }
   .scheme {
     background: none;
     text-align: center;
@@ -726,9 +736,15 @@ footer {
   .main-content {
     margin-top: 12rem;
   }
+  .features-img {
+    margin-bottom: 7rem;
+  }
   .price-button {
     text-align: center;
     padding: 2rem 0;
+  }
+  .feedback-slider {
+    max-height: 115rem;
   }
   .feedback-form {
     max-width: 40rem;

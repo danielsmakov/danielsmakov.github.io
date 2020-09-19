@@ -506,6 +506,9 @@ section {
   background: @light url(../img/materials/materials-bg.jpg) center no-repeat;
   background-size: cover;
   text-align: center;
+  &-details {
+    text-align: center;
+  }
   .section-header {
     margin-bottom: 5rem;
   }
@@ -514,12 +517,16 @@ section {
     margin-top: 5rem;
   }
   &-link {
+    display: block;
     color: @icons-color;
-    border-bottom: 1px dotted @icons-color;
     font-size: 1.6rem;
     .bold();
     &:hover {
       color: darken(@icons-color, 10%);
+    }
+    &-offer {
+      display: inline;
+      border-bottom: 1px dotted @icons-color;
     }
   }
   img {
@@ -700,9 +707,7 @@ footer {
       padding: 1rem 1rem;
     }
     &-slider {
-      .fotorama {
-        margin-bottom: 2rem;
-      }
+      max-height: 85rem;
     }
   }
   .hand {
@@ -755,6 +760,9 @@ footer {
     &-next-btn {
       right: 0;
     }
+    &-slider {
+      max-height: 80rem;
+    }
   }
   .scheme {
     background: none;
@@ -790,6 +798,11 @@ footer {
   .main-content {
     margin-top: 12rem;
   }
+  .features {
+    &-img {
+      margin-bottom: 7rem;
+    }
+  }
   .price {
     &-button {
       text-align: center;
@@ -797,6 +810,9 @@ footer {
     }
   }
   .feedback {
+    &-slider {
+      max-height: 115rem;
+    }
     &-form {
       max-width: 40rem;
       margin: 7rem auto;
