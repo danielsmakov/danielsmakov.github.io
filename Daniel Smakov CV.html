@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Smakov - .NET Backend Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile {
+            max-width: 60%;
+        }
+
+        .profile-img img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #007bff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .summary, .experience, .education-skills, .languages {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience .job {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            width: 50%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .education-skills {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .education, .skills {
+            flex: 1;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .profile img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .education-skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="profile">
+            <h1>DANIEL SMAKOV</h1>
+            <h2>.NET Backend Developer</h2>
+            <p>Almaty, Kazakhstan</p>
+            <p><a href="mailto:danieldiaz.smakov@gmail.com">danieldiaz.smakov@gmail.com</a></p>
+            <p>+7-747-506-50-68 | <a href="https://twitter.com/daniel_smakov">@daniel_smakov</a></p>
+        </div>
+        <div class="profile-img">
+            <img src="https://i.imgur.com/wluSabN.png" alt="Daniel Smakov">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="summary">
+        <h2>Summary</h2>
+        <p>Experienced .NET Backend Developer with over 3 years of expertise in developing high-performance and scalable web applications. Specializes in ASP.NET Core and microservice architecture. Looking for a challenging and responsible position where I can fully apply my knowledge and expertise to contribute to the creation of innovative solutions.</p>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3><a href="https://ati.su/" target="_blank">ATI.SU</a> - .NET Backend Developer</h3>
+            <p><strong>Feb 2022 - Jun 2024 | Remote</strong></p>
+            <ul>
+                <li><strong>Feature-Ownership:</strong> Led a critically important migration of microservices from MS SQL Server to PostgreSQL. Resulted in a complete transition to PostgreSQL, reducing system coupling.</li>
+                <li><strong>Mentorship:</strong> Mentored a junior developer, ensuring smooth team integration and improved productivity.</li>
+                <li><strong>SQL Optimization:</strong> Refactored complex stored procedures into smaller, manageable ones, enhancing maintainability.</li>
+                <li><strong>Legacy Refactor:</strong> Converted a .NET Framework microservice into .NET Core for better performance and maintainability.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3><a href="https://damumed.kz/#/" target="_blank">Damumed</a> - .NET Developer</h3>
+            <p><strong>Mar 2021 - Feb 2022 | Astana, Kazakhstan</strong></p>
+            <ul>
+                <li>Enhanced team collaboration using Git Flow practices.</li>
+                <li>Resolved critical bugs, improving overall system stability.</li>
+                <li>Developed new functionalities following User Stories, increasing user satisfaction.</li>
+                <li>Optimized database performance by developing complex SQL queries and indexes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education-skills">
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor in IT Management</strong></p>
+            <p>Astana IT University, 2019 - 2021</p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>.NET 6, ASP.NET Core 6, .NET Framework 4.7</li>
+                <li>Dapper, Entity Framework, SQL, PostgreSQL, MS SQL Server, MongoDB</li>
+                <li>CI/CD (GitLab), Docker Swarm, RabbitMQ, ELK</li>
+                <li>Agile/Kanban, Azure DevOps, Consul</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="languages">
+        <h2>Languages</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Native</td>
+            </tr>
+            <tr>
+                <td>Russian</td>
+                <td>B1 Intermediate</td>
+            </tr>
+            <tr>
+                <td>Kazakh</td>
+                <td>A1 Beginner</td>
+            </tr>
+        </table>
+    </section>
+</main>
+</body>
+</html>
